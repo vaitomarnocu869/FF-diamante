@@ -1,0 +1,401 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Diamonds - Compre Diamantes para Free Fire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        .diamond-card {
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+        }
+        
+        .diamond-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+            border-color: #6366f1;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+        }
+        
+        .input-field {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+        
+        .input-field:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+            }
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="rounded-full">
+                <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">FF Diamonds</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-purple-400 transition">Início</a>
+                <a href="#" class="hover:text-purple-400 transition">Pacotes</a>
+                <a href="#" class="hover:text-purple-400 transition">Promoções</a>
+                <a href="#" class="hover:text-purple-400 transition">Suporte</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="hidden md:block btn-primary px-4 py-2 rounded-full font-medium">
+                    <i class="fas fa-user mr-2"></i>Minha Conta
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://via.placeholder.com/1920x1080" alt="Free Fire Background" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="max-w-2xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Compre Diamantes para <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">Free Fire</span></h1>
+                <p class="text-lg text-gray-300 mb-8">Os melhores pacotes com entrega instantânea diretamente na sua conta. Aproveite nossas promoções exclusivas!</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#packages" class="btn-primary px-6 py-3 rounded-full font-semibold text-lg">
+                        <i class="fas fa-gem mr-2"></i>Ver Pacotes
+                    </a>
+                    <a href="#how-it-works" class="px-6 py-3 rounded-full font-semibold text-lg border border-purple-500 text-purple-400 hover:bg-purple-900/30 transition">
+                        <i class="fas fa-question-circle mr-2"></i>Como Funciona
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Escolha Seu Pacote de Diamantes</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Selecione a quantidade de diamantes que deseja comprar e insira seu UID para receber instantaneamente</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Package 1 -->
+                <div class="diamond-card rounded-xl p-6 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">100 Diamantes</h3>
+                            <p class="text-gray-400 text-sm">Básico</p>
+                        </div>
+                        <div class="feature-icon rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-gem text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="text-3xl font-bold">R$ 4,90</p>
+                        <p class="text-sm text-gray-400">Economize 10%</p>
+                    </div>
+                    <ul class="mb-6 space-y-2 flex-grow">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Entrega em 5 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Suporte 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Pagamento seguro</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full py-3 rounded-lg font-medium mt-auto" onclick="showPaymentModal(100, 4.90)">
+                        Comprar Agora
+                    </button>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="diamond-card rounded-xl p-6 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">310 Diamantes</h3>
+                            <p class="text-gray-400 text-sm">Popular</p>
+                        </div>
+                        <div class="feature-icon rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-gem text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="text-3xl font-bold">R$ 14,90</p>
+                        <p class="text-sm text-gray-400">Economize 15%</p>
+                    </div>
+                    <ul class="mb-6 space-y-2 flex-grow">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Entrega em 5 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Suporte 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Pagamento seguro</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Bônus de 10 diamantes</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full py-3 rounded-lg font-medium mt-auto" onclick="showPaymentModal(310, 14.90)">
+                        Comprar Agora
+                    </button>
+                </div>
+                
+                <!-- Package 3 (Featured) -->
+                <div class="diamond-card rounded-xl p-6 flex flex-col border-2 border-purple-500 relative">
+                    <div class="absolute -top-3 -right-3 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        MELHOR OFERTA
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">520 Diamantes</h3>
+                            <p class="text-gray-400 text-sm">Recomendado</p>
+                        </div>
+                        <div class="feature-icon rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-gem text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="text-3xl font-bold">R$ 24,90</p>
+                        <p class="text-sm text-gray-400">Economize 20%</p>
+                    </div>
+                    <ul class="mb-6 space-y-2 flex-grow">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Entrega em 5 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Suporte 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Pagamento seguro</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Bônus de 30 diamantes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>1 Royale Voucher</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full py-3 rounded-lg font-medium mt-auto pulse" onclick="showPaymentModal(520, 24.90)">
+                        Comprar Agora
+                    </button>
+                </div>
+                
+                <!-- Package 4 -->
+                <div class="diamond-card rounded-xl p-6 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">1060 Diamantes</h3>
+                            <p class="text-gray-400 text-sm">Premium</p>
+                        </div>
+                        <div class="feature-icon rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-gem text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="text-3xl font-bold">R$ 49,90</p>
+                        <p class="text-sm text-gray-400">Economize 25%</p>
+                    </div>
+                    <ul class="mb-6 space-y-2 flex-grow">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Entrega em 5 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Suporte 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Pagamento seguro</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Bônus de 60 diamantes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>2 Royale Vouchers</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>1 Mochila Elite</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full py-3 rounded-lg font-medium mt-auto" onclick="showPaymentModal(1060, 49.90)">
+                        Comprar Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Como Comprar Diamantes</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Processo simples e seguro para receber seus diamantes</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-purple-900/50 flex items-center justify-center text-purple-400 text-2xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1. Insira Seu UID</h3>
+                    <p class="text-gray-400">Digite seu UID do Free Fire no campo indicado durante o checkout</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-purple-900/50 flex items-center justify-center text-purple-400 text-2xl">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">2. Escolha o Pagamento</h3>
+                    <p class="text-gray-400">Selecione o método de pagamento preferido e complete a compra</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-purple-900/50 flex items-center justify-center text-purple-400 text-2xl">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">3. Receba os Diamantes</h3>
+                    <p class="text-gray-400">Seus diamantes serão creditados em sua conta em até 5 minutos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Avaliações de jogadores que já compraram conosco</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="User" class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Carlos Silva</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Comprei 520 diamantes e recebi em menos de 3 minutos! Serviço excelente e preço muito bom."</p>
+                </div>
+                
+                <div class="bg-slate-800/50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="User" class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ana Oliveira</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Primeira vez que comprei e fiquei impressionada com a rapidez. Já indiquei para todos os meus amigos do clã!"</p>
+                </div>
+                
+                <div class="bg-slate-800/50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="User" class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rafael Santos</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Ótimo atendimento quando tive dúvidas. Os bônus extras foram uma surpresa agradável. Recomendo!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gradient-to-b from-slate-800 to-slate-900">
+        <div 
